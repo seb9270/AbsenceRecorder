@@ -16,6 +16,7 @@
 		5A232BBF2B86A706008BC6B7 /* AbsenceRecorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A232BBE2B86A706008BC6B7 /* AbsenceRecorderUITestsLaunchTests.swift */; };
 		5A232BD02B86AC8D008BC6B7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A232BCF2B86AC8D008BC6B7 /* Student.swift */; };
 		5A232BD22B86ACF4008BC6B7 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A232BD12B86ACF4008BC6B7 /* Division.swift */; };
+		5AB793DA2B8BF9C900C9A48E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB793D92B8BF9C900C9A48E /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5A232BBE2B86A706008BC6B7 /* AbsenceRecorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A232BCF2B86AC8D008BC6B7 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		5A232BD12B86ACF4008BC6B7 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		5AB793D92B8BF9C900C9A48E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		5A232BA02B86A703008BC6B7 /* AbsenceRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				5AB793D82B8BF9BA00C9A48E /* Extensions */,
 				5A232BCC2B86AC04008BC6B7 /* View */,
 				5A232BCB2B86ABF1008BC6B7 /* Model */,
 				5A232BA12B86A703008BC6B7 /* AbsenceRecorderApp.swift */,
@@ -147,6 +150,14 @@
 				5A232BA32B86A703008BC6B7 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5AB793D82B8BF9BA00C9A48E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AB793D92B8BF9C900C9A48E /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A232BA42B86A703008BC6B7 /* ContentView.swift in Sources */,
+				5AB793DA2B8BF9C900C9A48E /* Date.swift in Sources */,
 				5A232BD02B86AC8D008BC6B7 /* Student.swift in Sources */,
 				5A232BD22B86ACF4008BC6B7 /* Division.swift in Sources */,
 				5A232BA22B86A703008BC6B7 /* AbsenceRecorderApp.swift in Sources */,

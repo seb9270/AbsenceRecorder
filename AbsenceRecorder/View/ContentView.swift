@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    var divisions: [Division]
+    @State private var currentDate: Date = Date()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, w")
+        NavigationView {
+            List(divisions, id: \.self.code) { division in
+                Text("\(division.code)")
+                    .padding()
+            }
+            .navigationTitle(currentDate.getShortDate())
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: { currentDate = Calendar.current(byAdding: .day, value: -1, to: currentDate) }) {
+                        Image(systemName: "arrow.backward")
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
-
+    
 #Preview {
-    ContentView()
+    ContentView(divisions: Division.examples)
 }
+    
+    
+    
