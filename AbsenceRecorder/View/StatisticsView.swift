@@ -13,8 +13,13 @@ struct StatisticsView: View {
     var body: some View {
         VStack {
             List(state.divisions, id: \.self.code) { division in
-                Text("\(division.code)")
-                Text("\(division.students.count)")
+                VStack {
+                    Spacer()
+                    Text("\(division.code)")
+                    Spacer()
+                    Text("Quantity: \(division.students.count)")
+                    Spacer()
+                }
             }
         }
 
@@ -23,4 +28,5 @@ struct StatisticsView: View {
 
 #Preview {
     StatisticsView()
+        .environmentObject(StateController())
 }

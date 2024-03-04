@@ -26,4 +26,5 @@ struct RootTabView: View {
 
 #Preview {
     RootTabView()
+        .environmentObject(StateController())
 }
